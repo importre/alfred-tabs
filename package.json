@@ -40,7 +40,12 @@
     "xo": "^0.16.0"
   },
   "xo": {
-    "esnext": true
+    "esnext": true,
+    "rules": {
+      "babel/new-cap": "off",
+      "no-undef": "off",
+      "no-unused-vars": "off"
+    }
   }
 }
 

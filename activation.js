@@ -1,7 +1,7 @@
 const getTabId = tab => {
 	try {
 		return tab.id();
-	} catch (e) {
+	} catch (err) {
 		return null;
 	}
 };
@@ -14,7 +14,7 @@ function run(argv) {
 	const tab = window.tabs()
 		.filter(tab => getTabId(tab) ?
 			tab.id() === item.tabId :
-			tab.index() == item.tabIndex)[0];
+			tab.index() === item.tabIndex)[0];
 
 	if (item.appName === 'Safari') {
 		window.currentTab = tab;
