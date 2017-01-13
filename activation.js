@@ -19,7 +19,6 @@ function run(argv) {
 	if (item.appName === 'Safari') {
 		window.currentTab = tab;
 	} else if (item.appName === 'Google Chrome') {
-		app.activate();
 		window.activeTabIndex = item.tabIndex;
 	} else {
 		return;
