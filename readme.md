@@ -16,6 +16,10 @@ $ npm i -g alfred-tabs
 
 In Alfred, type `t`, <kbd>Space</kbd>, and your query.
 
+![screenshot1](https://cloud.githubusercontent.com/assets/1744446/21936734/9bb8e4dc-d9f5-11e6-8dc2-5773a82b6228.png)
+
+![screenshot2](https://cloud.githubusercontent.com/assets/1744446/21936735/9bf65812-d9f5-11e6-803b-17e4e6bbbc8b.png)
+
 
 ## License
 
