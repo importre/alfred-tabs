@@ -18,9 +18,12 @@
     "preuninstall": "alfy-cleanup"
   },
   "files": [
+    "activation.js",
     "index.js",
+    "tabs.js",
     "icon.png",
-    "info.plist"
+    "info.plist",
+    "icons"
   ],
   "keywords": [
     "alfred",
@@ -48,3 +51,4 @@
     }
   }
 }
+
