@@ -1,6 +1,6 @@
 {
   "name": "alfred-tabs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find Chrome/Safari tabs you want easily",
   "license": "MIT",
   "repository": "importre/alfred-tabs",
