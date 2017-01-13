@@ -1,0 +1,46 @@
+{
+  "name": "alfred-tabs",
+  "version": "0.0.0",
+  "description": "Find Chrome/Safari tabs you want easily",
+  "license": "MIT",
+  "repository": "importre/alfred-tabs",
+  "author": {
+    "name": "",
+    "email": "jaeweheo@gmail.com",
+    "url": "importre.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "chrome",
+    "safari",
+    "tabs",
+    "tab"
+  ],
+  "dependencies": {
+    "alfred-notifier": "^0.2.0",
+    "alfy": "^0.6.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.15.2",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
+
