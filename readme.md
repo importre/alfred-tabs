@@ -15,7 +15,8 @@ $ npm i -g alfred-tabs
 ## Usage
 
 In Alfred, type `t`, <kbd>Space</kbd>, and your query.
-And then hit <kbd>Enter</kbd>! You will be able to see the tab :)
+Then select the tab you want and hit <kbd>Enter</kbd>!
+You will be able to see the tab :)
 
 ![screenshot1](https://cloud.githubusercontent.com/assets/1744446/21936734/9bb8e4dc-d9f5-11e6-8dc2-5773a82b6228.png)
 
