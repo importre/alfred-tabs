@@ -23,7 +23,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>Jaewe Heo</string>
 	<key>description</key>
 	<string>Find Chrome/Safari tabs you want easily</string>
 	<key>disabled</key>
@@ -54,7 +54,7 @@
 				<key>runningsubtext</key>
 				<string>Searching</string>
 				<key>script</key>
-				<string>osascript -l JavaScript tabs.js $1
+				<string>osascript -l JavaScript tabs.js "$1"
 ./node_modules/.bin/run-node index.js</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -84,7 +84,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>osascript -l JavaScript activation.js $1</string>
+				<string>osascript -l JavaScript activation.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -120,6 +120,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/importre/alfred-tabs</string>
 </dict>
 </plist>
