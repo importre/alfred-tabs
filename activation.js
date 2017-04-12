@@ -16,7 +16,7 @@ function run(argv) {
 			tab.id() === item.tabId :
 			tab.index() === item.tabIndex)[0];
 
-	if (item.appName === 'Safari') {
+	if (item.appName === 'Safari Technology Preview' || item.appName === 'Safari') {
 		window.currentTab = tab;
 	} else if (item.appName === 'Google Chrome') {
 		window.activeTabIndex = item.tabIndex;

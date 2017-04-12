@@ -69,7 +69,7 @@ const matches = (item, query) => {
 
 function run(argv) {
 	const query = argv[0].toLowerCase().normalize();
-	const tabs = ['Safari', 'Google Chrome']
+	const tabs = ['Safari', 'Safari Technology Preview', 'Google Chrome']
 		.filter(hasApp)
 		.map(name => Application(name))
 		.map(getAppWindows)
