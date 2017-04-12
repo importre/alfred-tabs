@@ -7,6 +7,10 @@ const hasApp = name => {
 	}
 };
 
+const appIsRunning = name => {
+	return Application('System Events').applicationProcesses.where({name}).name().length > 0;
+};
+
 const hasTabs = window => {
 	try {
 		window.tabs();
@@ -69,8 +73,9 @@ const matches = (item, query) => {
 
 function run(argv) {
 	const query = argv[0].toLowerCase().normalize();
-	const tabs = ['Safari', 'Google Chrome']
+	const tabs = ['Safari', 'Safari Technology Preview', 'Google Chrome']
 		.filter(hasApp)
+		.filter(appIsRunning)
 		.map(name => Application(name))
 		.map(getAppWindows)
 		.reduce((a, b) => a.concat(b), [])
