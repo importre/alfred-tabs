@@ -16,6 +16,10 @@ const hasTabs = window => {
 	}
 };
 
+const isRunning = app => {
+	return app.running();
+};
+
 const getAppWindows = app => app
 	.windows()
 	.filter(window => window.name() && hasTabs(window))
@@ -71,6 +75,7 @@ function run(argv) {
 	const query = argv[0].toLowerCase().normalize();
 	const tabs = ['Safari', 'Google Chrome']
 		.filter(hasApp)
+		.filter(isRunning)
 		.map(name => Application(name))
 		.map(getAppWindows)
 		.reduce((a, b) => a.concat(b), [])
